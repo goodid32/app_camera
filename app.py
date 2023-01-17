@@ -17,3 +17,6 @@ if pic is not None:
     with open(os.path.join(img_path, img_name+ext), 'wb') as f:
         f.write(pic.getbuffer())
 
+file_list = os.listdir(img_path)
+st.write(file_list)
+
